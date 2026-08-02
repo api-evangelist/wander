@@ -1,8 +1,29 @@
 aid: wander
-name: Wander *
-description: 'Wander * is a company surfaced as a portfolio company of gv, qed-investors, redpoint-ventures,
-  uncork-capital and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This
-  profile is a lead awaiting the enrichment pipeline.'
+name: Wander
+description: >-
+  Wander is a vertically integrated luxury hospitality company offering smart vacation
+  homes with hotel-grade amenities, dedicated remote-work spaces, and 24/7 concierge
+  service across North America. Founded by John Andrew Entwistle and headquartered in
+  Austin, Texas, Wander powers owners and operators through WanderOS, its proprietary
+  agentic AI operating system that automates dynamic pricing, operations, and guest
+  support. The company raised a $50M Series B in 2025 co-led by QED Investors and Fifth
+  Wall, with Redpoint Ventures, Uncork Capital, Starwood, and Breyer Capital
+  participating, bringing total funding past $100M. Wander ships no public developer
+  API, but publishes a deliberately agent-ready web surface: an llms.txt, an AI sitemap
+  of 8,500+ markdown property pages with live 90-day pricing and availability refreshed
+  daily, and Content-Signal AI-use permissions in robots.txt.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://assets.wander.com/www/seo/1753999968-preview2.jpg
 url: https://raw.githubusercontent.com/api-evangelist/wander/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,12 +34,27 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-identity-note: >-
+  Stub was created with onwander.com, which now redirects to an unrelated site
+  (kodi.bio); the live company matching the QED/Redpoint/Uncork backing is wander.com
+  (confirmed via 2025 Series B coverage), and this profile is anchored there.
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Travel
+- Hospitality
+- Vacation Rentals
+- Smart Homes
+- Concierge
+- AI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,4 +63,22 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://onwander.com
+  url: https://www.wander.com
+- type: Blog
+  url: https://www.wander.com/blog
+- type: Support
+  url: https://www.wander.com/help
+- type: TermsOfService
+  url: https://www.wander.com/terms
+- type: PrivacyPolicy
+  url: https://www.wander.com/privacy
+- type: GitHubOrganization
+  url: https://github.com/wandercom
+- type: LLMsTxt
+  url: llms/wander-llms.txt
+- type: ContentSignal
+  url: well-known/wander-robots.txt
+- type: WellKnown
+  url: well-known/wander-well-known.yml
+- type: DomainSecurity
+  url: security/wander-domain-security.yml

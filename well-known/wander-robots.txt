@@ -1,0 +1,16 @@
+# *
+User-agent: *
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+Allow: /
+Disallow: /profile*
+Disallow: /trips*
+Disallow: /trip-summary*
+Disallow: /admin*
+Disallow: /api/admin*
+
+# Host
+Host: https://www.wander.com
+
+# Sitemaps
+Sitemap: https://www.wander.com/sitemap.xml
+Sitemap: https://www.wander.com/ai-sitemap.xml

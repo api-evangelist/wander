@@ -1,0 +1,34 @@
+generated: '2026-07-21'
+method: searched
+host: https://www.wander.com
+note: >-
+  Unknown paths on www.wander.com 307-redirect to the /operated marketing page
+  (slug + utm_source query), so a 307 below means the document is not published.
+  Wander's discovery surface is agent-content oriented: llms.txt, an AI sitemap of
+  8,539 markdown property pages (live 90-day pricing/availability, lastmod daily),
+  and Content-Signal AI-use permissions in robots.txt.
+documents:
+- path: /robots.txt
+  status: 200
+  file: wander-robots.txt
+  note: includes Content-Signal (ai-train=yes, search=yes, ai-input=yes) and ai-sitemap
+- path: /llms.txt
+  status: 200
+  file: ../llms/wander-llms.txt
+- path: /ai-sitemap.xml
+  status: 200
+  note: 8,539 markdown property-page URLs, changefreq daily; not saved raw (1.5MB, churns daily)
+- path: /llms-full.txt
+  status: 307
+- path: /.well-known/security.txt
+  status: 307
+- path: /security.txt
+  status: 307
+- path: /.well-known/openid-configuration
+  status: 307
+- path: /.well-known/oauth-authorization-server
+  status: 307
+- path: /.well-known/api-catalog
+  status: 307
+- path: /.well-known/ai-plugin.json
+  status: 307
